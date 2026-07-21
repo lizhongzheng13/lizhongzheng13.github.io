@@ -3,7 +3,7 @@
     <div class="section-kicker">About Me</div>
     <p>
       我目前是山东大学硕士研究生，研究兴趣包括深度强化学习、模仿学习与机器人感知，关注智能体在复杂环境中的鲁棒决策与自适应运动控制。
-      本科毕业于内蒙古农业大学计算机科学与技术专业，曾参与算法竞赛、机器人开发与视觉感知相关项目。
+      本科毕业于内蒙古农业大学计算机科学与技术专业。学习期间参与过数据处理、算法竞赛和计算机视觉相关工作，并逐步将兴趣聚焦到机器人学习、感知与决策方向。
     </p>
     <div class="quick-links">
       <a href="https://github.com/zhongzhengli13" target="_blank" rel="noopener">GitHub</a>

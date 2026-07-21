@@ -4,7 +4,9 @@
     <p>
       I am a master's student at Shandong University. My research interests include deep reinforcement learning,
       imitation learning, and robot perception, with a focus on robust decision-making and adaptive locomotion in complex environments.
-      I received my B.Eng. in Computer Science and Technology from Inner Mongolia Agricultural University in 2026.
+      I received my B.Eng. in Computer Science and Technology from Inner Mongolia Agricultural University. During my undergraduate study,
+      I worked on data processing, algorithm competitions, and computer vision-related projects, which gradually shaped my interest in robot learning,
+      perception, and decision-making.
     </p>
     <div class="quick-links">
       <a href="https://github.com/zhongzhengli13" target="_blank" rel="noopener">GitHub</a>
