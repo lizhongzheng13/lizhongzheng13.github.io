@@ -1,10 +1,15 @@
 title: Zhongzheng Li's Homepage
 page-top-title: Zhongzheng Li
 top-section-bg-text: >-
-  <span class="hero-eyebrow">Shandong University · Robot Learning</span>
-  <span class="hero-name">Zhongzheng Li</span>
-  <span class="hero-cn">李中政</span>
-  <span class="hero-focus">Exploring perception-aware decision making and robust locomotion for embodied intelligence.</span>
+  <span class="hero-eyebrow">Zhongzheng Li · 李中政</span>
+  <span class="hero-name">Learning to move, see, and adapt.</span>
+  <span class="hero-focus">Robot learning for perception-aware decision making and robust locomotion.</span>
+  <span class="hero-stack">
+    <span>Deep RL</span>
+    <span>Imitation Learning</span>
+    <span>Robot Perception</span>
+    <span>Locomotion</span>
+  </span>
   <span class="hero-actions">
     <a href="https://github.com/zhongzhengli13" target="_blank" rel="noopener">GitHub</a>
     <a href="https://www.cnblogs.com/zhongzhengli" target="_blank" rel="noopener">Blog</a>
