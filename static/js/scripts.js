@@ -133,6 +133,81 @@ function openLightbox(src) {
     overlay.classList.add('active');
 }
 
+function getActiveTheme() {
+    const savedTheme = document.documentElement.dataset.theme;
+    if (savedTheme) return savedTheme;
+    return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+}
+
+function updateThemeButton() {
+    const button = document.querySelector('[data-dock-theme]');
+    if (!button) return;
+    const icon = button.querySelector('i');
+    const isDark = getActiveTheme() === 'dark';
+    button.setAttribute('aria-label', isDark ? 'Switch to light mode' : 'Switch to dark mode');
+    if (icon) {
+        icon.className = isDark ? 'bi bi-sun' : 'bi bi-moon-stars';
+    }
+}
+
+function setTheme(theme) {
+    document.documentElement.dataset.theme = theme;
+    localStorage.setItem('theme', theme);
+    updateThemeButton();
+}
+
+function initMascotDock() {
+    const dock = document.getElementById('mascot-dock');
+    if (!dock) return;
+
+    const toggle = dock.querySelector('.mascot-toggle');
+    const mascotImage = dock.querySelector('.mascot-toggle img');
+    const fallback = dock.querySelector('.mascot-fallback');
+
+    if (mascotImage && fallback) {
+        const showFallback = () => {
+            mascotImage.hidden = true;
+            fallback.hidden = false;
+        };
+        mascotImage.addEventListener('error', () => {
+            showFallback();
+        });
+        if (mascotImage.complete && mascotImage.naturalWidth === 0) showFallback();
+    }
+
+    toggle.addEventListener('click', (event) => {
+        event.stopPropagation();
+        const isOpen = dock.classList.toggle('is-open');
+        toggle.setAttribute('aria-expanded', String(isOpen));
+    });
+
+    dock.querySelector('[data-dock-theme]').addEventListener('click', (event) => {
+        event.stopPropagation();
+        const nextTheme = getActiveTheme() === 'dark' ? 'light' : 'dark';
+        setTheme(nextTheme);
+    });
+
+    dock.querySelector('[data-dock-top]').addEventListener('click', (event) => {
+        event.stopPropagation();
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+        dock.classList.remove('is-open');
+        toggle.setAttribute('aria-expanded', 'false');
+    });
+
+    document.addEventListener('click', () => {
+        dock.classList.remove('is-open');
+        toggle.setAttribute('aria-expanded', 'false');
+    });
+
+    document.addEventListener('keydown', (event) => {
+        if (event.key !== 'Escape') return;
+        dock.classList.remove('is-open');
+        toggle.setAttribute('aria-expanded', 'false');
+    });
+
+    updateThemeButton();
+}
+
 function loadContent() {
     // Yaml
     fetch(getDir() + config_file)
@@ -223,5 +298,6 @@ window.addEventListener('DOMContentLoaded', event => {
         }
     });
 
+    initMascotDock();
     loadContent();
 });

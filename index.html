@@ -20,6 +20,12 @@
     <meta name="twitter:image" content="https://zhongzhengli13.github.io/static/assets/img/photo.jpg" />
     <link rel="canonical" href="https://zhongzhengli13.github.io/" />
     <title id="title"></title>
+    <script>
+        try {
+            const theme = localStorage.getItem('theme');
+            if (theme) document.documentElement.dataset.theme = theme;
+        } catch {}
+    </script>
 
     <!-- Structured Data (JSON-LD) -->
     <script type="application/ld+json">
@@ -197,6 +203,21 @@
     </section>
     <!-- Awards -->
 
+
+    <div class="mascot-dock" id="mascot-dock">
+        <div class="mascot-actions" aria-label="Quick actions">
+            <button class="mascot-action mascot-theme" type="button" data-dock-theme aria-label="Toggle dark mode">
+                <i class="bi bi-moon-stars"></i>
+            </button>
+            <button class="mascot-action" type="button" data-dock-top aria-label="Back to top">
+                <i class="bi bi-arrow-up"></i>
+            </button>
+        </div>
+        <button class="mascot-toggle" type="button" aria-label="Open quick actions" aria-expanded="false">
+            <img src="static/assets/img/mascot.png" alt="">
+            <span class="mascot-fallback" hidden>ZZ</span>
+        </button>
+    </div>
 
     <!-- Footer-->
     <footer class="bg-bottom text-center py-5">
