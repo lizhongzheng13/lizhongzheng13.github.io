@@ -1,13 +1,14 @@
 title: Zhongzheng Li's Homepage
 page-top-title: Zhongzheng Li
 top-section-bg-text: >-
-  <span class="hero-name">Zhongzheng Li / 李中政</span>
-  <span class="hero-role">M.Eng. Student @ Shandong University</span>
-  <span class="hero-focus">Deep RL · Imitation Learning · Robot Perception</span>
+  <span class="hero-eyebrow">Shandong University · Robot Learning</span>
+  <span class="hero-name">Zhongzheng Li</span>
+  <span class="hero-cn">李中政</span>
+  <span class="hero-focus">Exploring perception-aware decision making and robust locomotion for embodied intelligence.</span>
   <span class="hero-actions">
     <a href="https://github.com/zhongzhengli13" target="_blank" rel="noopener">GitHub</a>
     <a href="https://www.cnblogs.com/zhongzhengli" target="_blank" rel="noopener">Blog</a>
-    <a href="assets/ZhongzhengLi_CV_2025.pdf" target="_blank" rel="noopener">CV</a>
+    <button type="button" data-cv-toast>CV</button>
   </span>
 home-subtitle: Zhongzheng Li&ensp;|&ensp;李中政
 copyright-text: "COPYRIGHT_PLACEHOLDER"

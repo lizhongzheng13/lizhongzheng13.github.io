@@ -44,16 +44,25 @@ function applyI18n() {
     document.documentElement.lang = currentLang === 'zh' ? 'zh-CN' : 'en';
 }
 
-function showCvToast(el) {
+function showCvToast() {
     const lang = localStorage.getItem('lang') || 'zh';
-    const msg = lang === 'en' ? 'CV is being updated~' : '正在更新中~';
-    const existing = el.parentNode.querySelector('.cv-inline-toast');
+    const title = lang === 'en' ? 'CV is being updated' : 'CV 正在更新中';
+    const msg = lang === 'en'
+        ? 'A refreshed version will be available after the content is finalized.'
+        : '我还在整理适合公开展示的版本，完成后会放到这里。';
+    const existing = document.querySelector('.cv-toast');
     if (existing) existing.remove();
-    const tip = document.createElement('span');
-    tip.className = 'cv-inline-toast';
-    tip.textContent = msg;
-    el.parentNode.insertBefore(tip, el.nextSibling);
-    setTimeout(() => tip.remove(), 2000);
+
+    const tip = document.createElement('div');
+    tip.className = 'cv-toast';
+    tip.setAttribute('role', 'status');
+    tip.innerHTML = `<strong>${title}</strong><span>${msg}</span>`;
+    document.body.appendChild(tip);
+
+    setTimeout(() => {
+        tip.classList.add('is-hiding');
+        setTimeout(() => tip.remove(), 220);
+    }, 2600);
 }
 
 function initHoverGalleries() {
@@ -195,6 +204,13 @@ window.addEventListener('DOMContentLoaded', event => {
         currentLang = currentLang === 'zh' ? 'en' : 'zh';
         localStorage.setItem('lang', currentLang);
         loadContent();
+    });
+
+    document.addEventListener('click', (event) => {
+        const cvTrigger = event.target.closest('[data-cv-toast]');
+        if (!cvTrigger) return;
+        event.preventDefault();
+        showCvToast();
     });
 
     // Navbar scroll background

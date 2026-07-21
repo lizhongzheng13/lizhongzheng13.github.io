@@ -130,8 +130,8 @@
 .top-section h2 {
     display: flex;
     flex-direction: column;
-    gap: 0.55rem;
-    max-width: 760px;
+    gap: 0.5rem;
+    max-width: 700px;
     font-weight: 400;
 }
 
@@ -150,20 +150,34 @@
     background: rgba(0, 0, 0, 0.5);
 }
 
-.hero-name {
-    font-family: "Newsreader", Georgia, "Times New Roman", serif;
-    font-size: clamp(2.6rem, 6vw, 4.5rem);
-    line-height: 1;
+.hero-eyebrow {
+    color: rgba(255, 255, 255, 0.72);
+    font-family: "Mulish", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    font-size: 0.82rem;
+    font-weight: 800;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
 }
 
-.hero-role {
-    font-size: clamp(1.2rem, 2.2vw, 1.7rem);
-    color: rgba(255, 255, 255, 0.9);
+.hero-name {
+    font-family: "Newsreader", Georgia, "Times New Roman", serif;
+    font-size: clamp(3rem, 6vw, 5rem);
+    line-height: 0.95;
+}
+
+.hero-cn {
+    color: rgba(255, 255, 255, 0.86);
+    font-family: "Kanit", "Microsoft YaHei", sans-serif;
+    font-size: clamp(1.25rem, 2.4vw, 1.8rem);
+    line-height: 1.1;
 }
 
 .hero-focus {
-    font-size: clamp(0.95rem, 1.7vw, 1.15rem);
-    color: rgba(255, 255, 255, 0.76);
+    max-width: 620px;
+    margin-top: 0.2rem;
+    font-size: clamp(1rem, 1.7vw, 1.2rem);
+    line-height: 1.55;
+    color: rgba(255, 255, 255, 0.78);
 }
 
 .hero-actions {
@@ -173,7 +187,8 @@
     margin-top: 0.75rem;
 }
 
-.hero-actions a {
+.hero-actions a,
+.hero-actions button {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -188,9 +203,11 @@
     text-decoration: none;
     backdrop-filter: blur(6px);
     background: rgba(255, 255, 255, 0.1);
+    cursor: pointer;
 }
 
-.hero-actions a:hover {
+.hero-actions a:hover,
+.hero-actions button:hover {
     background: #fff;
     border-color: #fff;
     color: var(--h-title-color);
@@ -342,7 +359,9 @@ section + section::before {
 }
 
 .quick-links a,
-.pub-links a {
+.quick-links button,
+.pub-links a,
+.pub-links button {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -355,10 +374,13 @@ section + section::before {
     font-size: 0.95rem;
     font-weight: 600;
     text-decoration: none;
+    cursor: pointer;
 }
 
 .quick-links a:hover,
-.pub-links a:hover {
+.quick-links button:hover,
+.pub-links a:hover,
+.pub-links button:hover {
     border-color: var(--h-title-color);
     background: var(--h-title-color);
     color: #fff;
@@ -554,21 +576,45 @@ section + section::before {
     }
 }
 
-.cv-inline-toast {
-    display: inline-block;
-    margin-left: 8px;
-    padding: 2px 12px;
-    background: var(--h-title-color);
-    color: #fff;
-    border-radius: 4px;
-    font-size: 0.9rem;
-    vertical-align: middle;
-    animation: cv-fade-in 0.3s ease;
+.cv-toast {
+    position: fixed;
+    top: 5.2rem;
+    right: 1.25rem;
+    z-index: 100001;
+    display: grid;
+    gap: 0.25rem;
+    width: min(340px, calc(100vw - 2rem));
+    padding: 0.9rem 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.22);
+    border-left: 4px solid var(--accent-green);
+    border-radius: 8px;
+    background: var(--panel-bg);
+    box-shadow: 0 14px 34px rgba(0, 0, 0, 0.18);
+    color: var(--text-primary);
+    backdrop-filter: blur(14px);
+    animation: cv-toast-in 0.22s ease;
 }
 
-@keyframes cv-fade-in {
-    from { opacity: 0; transform: translateX(-6px); }
-    to { opacity: 1; transform: translateX(0); }
+.cv-toast strong {
+    color: var(--h-title-color);
+    font-size: 1rem;
+}
+
+.cv-toast span {
+    color: var(--text-secondary);
+    font-size: 0.92rem;
+    line-height: 1.55;
+}
+
+.cv-toast.is-hiding {
+    opacity: 0;
+    transform: translateY(-8px);
+    transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+@keyframes cv-toast-in {
+    from { opacity: 0; transform: translateY(-8px); }
+    to { opacity: 1; transform: translateY(0); }
 }
 
 .hover-gallery {
@@ -690,7 +736,9 @@ a {
     }
 
     .hero-actions a,
+    .hero-actions button,
     .quick-links a,
+    .quick-links button,
     .pub-links a {
         flex: 1 1 96px;
     }

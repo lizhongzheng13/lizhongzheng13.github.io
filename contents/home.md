@@ -8,7 +8,7 @@
     <div class="quick-links">
       <a href="https://github.com/zhongzhengli13" target="_blank" rel="noopener">GitHub</a>
       <a href="https://www.cnblogs.com/zhongzhengli" target="_blank" rel="noopener">Blog</a>
-      <a href="assets/ZhongzhengLi_CV_2025.pdf" target="_blank" rel="noopener">CV</a>
+      <button type="button" data-cv-toast>CV</button>
       <a href="mailto:878954714@qq.com">Email</a>
     </div>
   </article>
