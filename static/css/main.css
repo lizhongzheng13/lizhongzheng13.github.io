@@ -720,19 +720,19 @@ section + section::before {
 
 .mascot-dock {
     position: fixed;
-    right: 24px;
-    bottom: 24px;
+    right: 22px;
+    bottom: 22px;
     z-index: 10010;
-    width: 92px;
-    height: 92px;
+    width: 72px;
+    height: 72px;
 }
 
 .mascot-toggle {
     position: absolute;
     right: 0;
     bottom: 0;
-    width: 86px;
-    height: 86px;
+    width: 66px;
+    height: 66px;
     overflow: hidden;
     border: 1px solid rgba(255, 255, 255, 0.72);
     border-radius: 50%;
@@ -768,10 +768,10 @@ section + section::before {
 
 .mascot-actions {
     position: absolute;
-    right: 22px;
-    bottom: 22px;
-    width: 48px;
-    height: 48px;
+    right: 13px;
+    bottom: 13px;
+    width: 40px;
+    height: 40px;
     pointer-events: none;
 }
 
@@ -781,8 +781,8 @@ section + section::before {
     bottom: 0;
     display: grid;
     place-items: center;
-    width: 48px;
-    height: 48px;
+    width: 40px;
+    height: 40px;
     border: 1px solid var(--border-color);
     border-radius: 50%;
     background: var(--panel-bg);
@@ -797,7 +797,7 @@ section + section::before {
 }
 
 .mascot-action i {
-    font-size: 1.35rem;
+    font-size: 1.12rem;
     line-height: 1;
 }
 
@@ -817,11 +817,11 @@ section + section::before {
 }
 
 .mascot-dock.is-open .mascot-action:nth-child(1) {
-    transform: translate3d(-74px, -20px, 0) scale(1);
+    transform: translate3d(-60px, -14px, 0) scale(1);
 }
 
 .mascot-dock.is-open .mascot-action:nth-child(2) {
-    transform: translate3d(-24px, -78px, 0) scale(1);
+    transform: translate3d(-18px, -62px, 0) scale(1);
 }
 
 .mascot-dock.is-open .mascot-toggle {
@@ -882,28 +882,28 @@ a {
     }
 
     .mascot-dock {
-        right: 14px;
-        bottom: 14px;
-        width: 72px;
-        height: 72px;
+        right: 12px;
+        bottom: 12px;
+        width: 60px;
+        height: 60px;
     }
 
     .mascot-toggle {
-        width: 68px;
-        height: 68px;
+        width: 56px;
+        height: 56px;
     }
 
     .mascot-action {
-        width: 42px;
-        height: 42px;
+        width: 36px;
+        height: 36px;
     }
 
     .mascot-dock.is-open .mascot-action:nth-child(1) {
-        transform: translate3d(-62px, -12px, 0) scale(1);
+        transform: translate3d(-52px, -10px, 0) scale(1);
     }
 
     .mascot-dock.is-open .mascot-action:nth-child(2) {
-        transform: translate3d(-16px, -66px, 0) scale(1);
+        transform: translate3d(-14px, -54px, 0) scale(1);
     }
 }
 
