@@ -1,8 +1,24 @@
-- **[June 18, 2026]** Received my B.Eng. degree from Inner Mongolia Agricultural University. <span class="hover-gallery" data-images='["static/assets/img/graduation_1.jpg","static/assets/img/graduation_2.jpg","static/assets/img/graduation_3.jpg"]'><span class="hover-gallery-trigger">View Graduation Photos</span></span>
+<div class="timeline">
+  <article class="timeline-item">
+    <time>2026.06.18</time>
+    <div>
+      <h3>B.Eng. Graduation</h3>
+      <p>
+        Received my B.Eng. degree in Computer Science and Technology from Inner Mongolia Agricultural University.
+        <span class="hover-gallery" data-images='["static/assets/img/graduation_1.jpg","static/assets/img/graduation_2.jpg","static/assets/img/graduation_3.jpg"]'><span class="hover-gallery-trigger">View graduation photos</span></span>
+      </p>
+    </div>
+  </article>
 
-- **[Apr 2026 - Present]** Working on integrating perception and locomotion control for bipedal robots, aiming to achieve robust and adaptive walking in complex environments.
-
-<div style="max-width:640px;margin:16px auto;border-radius:8px;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,0.15);">
-  <iframe src="https://drive.google.com/file/d/17-Z-l5Jf8MS8OazmsAAUNeVLraz-c7sh/preview" style="display:block;width:100%;height:360px;border:0;" allow="autoplay; encrypted-media" allowfullscreen title="Bipedal Robot Demo"></iframe>
+  <article class="timeline-item">
+    <time>2026.04 - Present</time>
+    <div>
+      <h3>Perception-Integrated Locomotion Control</h3>
+      <p>Working on integrating perception and locomotion control for bipedal robots, aiming to achieve robust and adaptive walking in complex environments.</p>
+      <div class="media-frame">
+        <iframe src="https://drive.google.com/file/d/17-Z-l5Jf8MS8OazmsAAUNeVLraz-c7sh/preview" allow="autoplay; encrypted-media" allowfullscreen title="Bipedal Robot Demo"></iframe>
+      </div>
+      <p class="media-caption">Demo video: perception-integrated locomotion control for bipedal robots</p>
+    </div>
+  </article>
 </div>
-<p style="text-align:center;font-size:0.9em;color:#666;">Demo Video — Perception-Integrated Locomotion Control for Bipedal Robots</p>

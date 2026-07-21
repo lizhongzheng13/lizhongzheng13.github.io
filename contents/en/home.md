@@ -1,35 +1,31 @@
+<div class="profile-grid">
+  <article class="profile-panel profile-panel-main">
+    <div class="section-kicker">About Me</div>
+    <p>
+      I am a master's student at Shandong University. My research interests include deep reinforcement learning,
+      imitation learning, and robot perception, with a focus on robust decision-making and adaptive locomotion in complex environments.
+      I received my B.Eng. in Computer Science and Technology from Inner Mongolia Agricultural University in 2026.
+    </p>
+    <div class="quick-links">
+      <a href="https://github.com/zhongzhengli13" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://www.cnblogs.com/zhongzhengli" target="_blank" rel="noopener">Blog</a>
+      <a href="assets/ZhongzhengLi_CV_2025.pdf" target="_blank" rel="noopener">CV</a>
+      <a href="mailto:878954714@qq.com">Email</a>
+    </div>
+  </article>
 
+  <aside class="profile-panel">
+    <div class="section-kicker">Education</div>
+    <ul class="compact-list">
+      <li><strong>Shandong University</strong><span>M.Eng., 2026-2029</span></li>
+      <li><strong>Inner Mongolia Agricultural University</strong><span>B.Eng. in Computer Science and Technology, 2022-2026</span></li>
+    </ul>
+  </aside>
+</div>
 
-<a href="https://github.com/zhongzhengli13" target="_blank">Github</a> |
-<a href="javascript:void(0)" onclick="showCvToast(this)">CV</a>
-
-#### About Me
-
-I am from Shandong, China. I received my B.Eng. degree in Computer Science and Technology from <a href="https://www.imau.edu.cn/ndgk/ndjj.htm" target="_blank">Inner Mongolia Agricultural University</a> in June 2026. I am now pursuing my M.Eng. at Shandong University via recommendation.
-
-<hr>
-
-
-#### Education
-
-B.Eng. in Computer Science and Technology, Inner Mongolia Agricultural University, 2022–2026.
-
-M.Eng., Shandong University, 2026–2029.
-
-#### Research Interests
-
-- Deep Reinforcement Learning
-- Imitation Learning
-- Robot Perception
-
-#### Links
-
-<p>
-<a href="https://github.com/zhongzhengli13" target="_blank">GitHub</a> |
-<a href="https://www.cnblogs.com/zhongzhengli" target="_blank">Blog</a>
-</p>
-
-#### Contact
-
-<a href="mailto:878954714@qq.com">878954714@qq.com</a>
-
+<div class="research-strip">
+  <span>Deep Reinforcement Learning</span>
+  <span>Imitation Learning</span>
+  <span>Robot Perception</span>
+  <span>Robust Locomotion</span>
+</div>
