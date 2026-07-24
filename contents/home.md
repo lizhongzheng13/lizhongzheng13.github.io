@@ -19,6 +19,10 @@
       <li><strong>山东大学（保研）</strong><span>硕士研究生，2026—2029</span></li>
       <li><strong>内蒙古农业大学</strong><span>计算机科学与技术，本科，2022—2026</span></li>
     </ul>
+    <div class="focus-block">
+      <div class="section-kicker">Current Focus</div>
+      <p>面向复杂环境的感知驱动运动控制与机器人学习。</p>
+    </div>
   </aside>
 </div>
 

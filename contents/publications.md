@@ -1,7 +1,8 @@
 <article class="publication-card">
   <div class="pub-meta">
-    <span>2025</span>
+    <span>Accepted</span>
     <span>EI</span>
+    <span>Code Available</span>
   </div>
   <h3>QRSRNet: Structure-Aware and Recognition-Enhanced Super-Resolution for Degraded QR Code Images</h3>
   <p class="pub-authors"><strong>Zhongzheng Li</strong>, et al.</p>

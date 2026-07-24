@@ -367,6 +367,19 @@ section + section::before {
     max-width: 760px;
 }
 
+.focus-block {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--border-color);
+}
+
+.focus-block p {
+    color: var(--text-primary);
+    font-size: 0.98rem;
+    line-height: 1.65;
+    margin-bottom: 0;
+}
+
 .quick-links,
 .pub-links {
     display: flex;
@@ -740,10 +753,12 @@ section + section::before {
     box-shadow: 0 14px 34px rgba(0, 0, 0, 0.18);
     cursor: pointer;
     backdrop-filter: blur(10px);
+    animation: mascot-breathe 6s ease-in-out infinite;
     transition: transform 0.22s ease, box-shadow 0.22s ease;
 }
 
 .mascot-toggle:hover {
+    animation-play-state: paused;
     transform: translateY(-2px);
     box-shadow: 0 18px 42px rgba(0, 0, 0, 0.22);
 }
@@ -825,7 +840,17 @@ section + section::before {
 }
 
 .mascot-dock.is-open .mascot-toggle {
+    animation-play-state: paused;
     transform: rotate(4deg);
+}
+
+@keyframes mascot-breathe {
+    0%, 92%, 100% {
+        transform: translateY(0) scale(1);
+    }
+    96% {
+        transform: translateY(-3px) scale(1.025);
+    }
 }
 
 @keyframes fadeSlideUp {
@@ -910,6 +935,7 @@ a {
 @media (prefers-reduced-motion: reduce) {
     .mascot-toggle,
     .mascot-action {
+        animation: none;
         transition: none;
     }
 }

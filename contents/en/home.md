@@ -22,6 +22,10 @@
       <li><strong>Shandong University (recommended admission)</strong><span>M.Eng., 2026-2029</span></li>
       <li><strong>Inner Mongolia Agricultural University</strong><span>B.Eng. in Computer Science and Technology, 2022-2026</span></li>
     </ul>
+    <div class="focus-block">
+      <div class="section-kicker">Current Focus</div>
+      <p>Perception-aware locomotion control and robot learning in complex environments.</p>
+    </div>
   </aside>
 </div>
 
