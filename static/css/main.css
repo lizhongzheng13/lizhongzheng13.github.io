@@ -753,13 +753,11 @@ section + section::before {
     box-shadow: 0 14px 34px rgba(0, 0, 0, 0.18);
     cursor: pointer;
     backdrop-filter: blur(10px);
-    animation: mascot-breathe 6s ease-in-out infinite;
     transition: transform 0.22s ease, box-shadow 0.22s ease;
 }
 
 .mascot-toggle:hover {
-    animation-play-state: paused;
-    transform: translateY(-2px);
+    animation: mascot-wiggle 0.48s ease;
     box-shadow: 0 18px 42px rgba(0, 0, 0, 0.22);
 }
 
@@ -840,17 +838,14 @@ section + section::before {
 }
 
 .mascot-dock.is-open .mascot-toggle {
-    animation-play-state: paused;
     transform: rotate(4deg);
 }
 
-@keyframes mascot-breathe {
-    0%, 92%, 100% {
-        transform: translateY(0) scale(1);
-    }
-    96% {
-        transform: translateY(-3px) scale(1.025);
-    }
+@keyframes mascot-wiggle {
+    0%, 100% { transform: translateY(-2px) rotate(0); }
+    25% { transform: translateY(-2px) rotate(-4deg); }
+    50% { transform: translateY(-2px) rotate(3deg); }
+    75% { transform: translateY(-2px) rotate(-2deg); }
 }
 
 @keyframes fadeSlideUp {
