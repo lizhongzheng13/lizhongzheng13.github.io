@@ -20,7 +20,7 @@
     <div class="section-kicker">Scholarships</div>
     <ul class="compact-list">
       <li><strong>Inner Mongolia Autonomous Region Scholarship</strong><span>2023.10</span></li>
-      <li><strong>National Scholarship</strong><span>2024.09</span></li>
+      <li><strong>National Scholarship for Undergraduates</strong><span>2024.09</span></li>
     </ul>
   </section>
 </div>

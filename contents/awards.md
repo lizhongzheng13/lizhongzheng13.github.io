@@ -20,7 +20,7 @@
     <div class="section-kicker">Scholarships</div>
     <ul class="compact-list">
       <li><strong>内蒙古自治区奖学金</strong><span>2023.10</span></li>
-      <li><strong>国家奖学金</strong><span>2024.09</span></li>
+      <li><strong>本科生国家奖学金</strong><span>2024.09</span></li>
     </ul>
   </section>
 </div>

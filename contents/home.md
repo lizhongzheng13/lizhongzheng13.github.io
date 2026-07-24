@@ -16,7 +16,7 @@
   <aside class="profile-panel">
     <div class="section-kicker">Education</div>
     <ul class="compact-list">
-      <li><strong>山东大学</strong><span>硕士研究生，2026—2029</span></li>
+      <li><strong>山东大学（保研）</strong><span>硕士研究生，2026—2029</span></li>
       <li><strong>内蒙古农业大学</strong><span>计算机科学与技术，本科，2022—2026</span></li>
     </ul>
   </aside>
